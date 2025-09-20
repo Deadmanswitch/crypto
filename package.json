@@ -1,0 +1,80 @@
+{
+  "name": "@deadmanswitch.app/crypto",
+  "version": "1.0.1",
+  "description": "Deadmanswitch encryption package for React Native app and Browser",
+  "main": "dist/types.js",
+  "types": "dist/types.d.ts",
+  "exports": {
+    ".": {
+      "react-native": "./dist/types.native.js",
+      "types": "./dist/types.d.ts",
+      "default": "./dist/types.browser.js"
+    }
+  },
+  "react-native": "./dist/index.native.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false",
+    "test:verbose": "jest --verbose",
+    "prepare": "npm run build",
+    "lint": "echo 'No linter configured'",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "encryption",
+    "decryption",
+    "react-native",
+    "react",
+    "next.js",
+    "cross-platform",
+    "crypto",
+    "security",
+    "aes",
+    "pbkdf2",
+    "password-based"
+  ],
+  "author": "Victor Yan <vicyan614@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadmanswitch/encryption.git"
+  },
+  "homepage": "https://github.com/deadmanswitch/encryption#readme",
+  "bugs": {
+    "url": "https://github.com/deadmanswitch/encryption/issues"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*",
+    "react-native-quick-crypto": "0.7.17",
+    "react-native-quick-base64": "2.2.1"
+  },
+  "peerDependenciesMeta": {
+    "react-native": {
+      "optional": true
+    },
+     "react-native-quick-crypto": {
+      "optional": true
+    },
+    "react-native-quick-base64": {
+      "optional": true
+    }
+  }
+}
