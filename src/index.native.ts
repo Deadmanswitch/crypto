@@ -20,7 +20,7 @@
 //  THE SOFTWARE.
 // -----------------------------------------------------------------------------
 
-import type { Encoding } from "react-native-quick-crypto/lib/typescript/src/Utils";
+import type { Encoding } from "react-native-quick-crypto";
 
 export interface ReactNativeBlobUtilReadStream {
   path: string;

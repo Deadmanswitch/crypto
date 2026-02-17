@@ -1,6 +1,6 @@
 {
   "name": "@deadmanswitch.app/crypto",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Deadmanswitch encryption package for React Native app and Browser",
   "main": "dist/types.js",
   "types": "dist/types.d.ts",
@@ -63,7 +63,7 @@
   "peerDependencies": {
     "react": "*",
     "react-native": "*",
-    "react-native-quick-crypto": "0.7.17",
+    "react-native-quick-crypto": "1.0.12",
     "react-native-quick-base64": "2.2.1"
   },
   "peerDependenciesMeta": {
